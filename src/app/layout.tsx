@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     title: "Greeko | Greek Culture & History",
     description:
       "Explore Greek history, mythology, culture, and destinations through an interactive modern platform.",
-    url: "https://your-vercel-url.vercel.app",
+    url: "https://greek-scope.vercel.app/",
     siteName: "Greeko",
     images: [
       {
