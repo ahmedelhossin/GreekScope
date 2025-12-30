@@ -110,8 +110,15 @@ const Navbar = forwardRef<HTMLElement>((_, ref) => {
                 <ul
                   id="history-menu"
                   role="menu"
-                  className="absolute right-0 mt-2 w-48 bg-white border rounded-xl shadow-xl z-30"
+                  className="
+    static md:absolute
+    mt-2
+    w-full md:w-48
+    bg-white border rounded-xl shadow-xl
+    z-30
+  "
                 >
+
 
                   {/* Greek civilization */}
                   <li role="none" className="relative">
@@ -132,8 +139,16 @@ const Navbar = forwardRef<HTMLElement>((_, ref) => {
                       <ul
                         id="greek-submenu"
                         role="menu"
-                        className="absolute right-full top-0 ml-2 mt-2 w-64 bg-white border rounded-lg shadow-lg z-50"
+                        className="
+    static md:absolute
+    mt-2 md:mt-0
+    md:right-full
+    w-full md:w-64
+    bg-white border rounded-lg shadow-lg
+    z-50
+  "
                       >
+
                         <li role="none">
                           <Link
                             role="menuitem"
