@@ -1,10 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/common/navbar";
-import { ThemeProvider } from '@/context/ThemeContext';
-import Footer from "@/components/common/footer";
 import localFont from "next/font/local";
+import ClientLayout from "./ClientLayout";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -22,7 +20,6 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
-
 export const metadata: Metadata = {
   verification: {
     google: "f7elVlC32bXPfW6Pdu8DAIzRLbrk75k1Ka-hXEuzHVU",
@@ -41,6 +38,7 @@ export const metadata: Metadata = {
     "Tourism",
     "Ancient Greece",
     "CKP Ahmed ElHosssin VeRcEl",
+    "tuziyzghy",
   ],
   authors: [{ name: "Ahmed" }],
   creator: "Ahmed",
@@ -85,12 +83,12 @@ export default function RootLayout({
         className={`${geistSans.variable} ${cairo.variable} ${geistMono.variable} antialiased`}
       >
         <main>
-          <ThemeProvider>
-            <Navbar />
-            <div className="h-18"></div>
-            {children}
-            <Footer />
-          </ThemeProvider>
+          <ClientLayout>
+            
+              {/* <div className="h-18"></div> */}
+              {children}
+              
+            </ClientLayout>
         </main>
       </body>
     </html>
