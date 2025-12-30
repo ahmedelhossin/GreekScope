@@ -24,6 +24,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  verification: {
+    google: "f7elVlC32bXPfW6Pdu8DAIzRLbrk75k1Ka-hXEuzHVU",
+  },
   title: {
     default: "Greeko | Greek Culture & History",
     template: "%s | Greeko",
