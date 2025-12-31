@@ -43,7 +43,7 @@ export default function Santorini() {
                     {attractions.map((item) => (
                         <Card
                             key={item.title}
-                            className="overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl"
+                            className="overflow-hidden transform transition duration-300 active:scale-95 active:shadow-2xl md:hover:scale-105 md:hover:shadow-2xl"
                         >
                             <div className="relative h-48 w-full">
                                 <Image src={item.image} alt={item.title} fill className="object-cover" />

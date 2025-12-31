@@ -71,7 +71,7 @@ export default function AboutLanding() {
                             <Link
                                 key={index}
                                 href={fact.link}
-                                className="transition transform hover:scale-105"
+                                className="transition transform active:scale-95 md:hover:scale-105"
                             >
                                 <AboutCardHeavySection title={fact.title} text={fact.text} />
                             </Link>

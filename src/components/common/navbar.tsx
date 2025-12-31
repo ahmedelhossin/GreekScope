@@ -58,7 +58,7 @@ const Navbar = forwardRef<HTMLElement>((_, ref) => {
                 aria-current={isActive("/") ? "page" : undefined}
                 className={`block py-2 px-3 text-center ${isActive("/")
                   ? "text-white bg-amber-400 rounded-4xl"
-                  : "text-gray-700 hover:text-emerald-700"
+                  : "text-gray-700 md:hover:text-emerald-700 active:text-emerald-700"
                   }`}
               >
                 الرئيسية
@@ -87,7 +87,7 @@ const Navbar = forwardRef<HTMLElement>((_, ref) => {
                 aria-controls="history-menu"
                 className={`py-2 px-4 rounded-lg border transition-colors inline-flex items-center ${isHistoryActive()
                   ? "bg-amber-400 text-white"
-                  : "bg-white/50 text-gray-700 hover:bg-white"
+                  : "bg-white/50 text-gray-700 active:bg-white md:hover:bg-white"
                   }`}
               >
                 <span className="flex items-center">
@@ -129,8 +129,8 @@ const Navbar = forwardRef<HTMLElement>((_, ref) => {
                       onClick={() => setOpen(prev => !prev)}
                       className={`block  px-4 py-2  ${isActive("/history/archaicGreekCivilization") || isActive("/history/classicalGreekCivilization")
                         ? "bg-amber-600 text-white rounded-lg"
-                        : "text-gray-700 hover:bg-emerald-50"
-                        } w-full text-right px-4 py-2 hover:bg-emerald-50 font-semibold`}
+                        : "text-gray-700 md:hover:bg-emerald-50 active:bg-emerald-50"
+                        } w-full text-right px-4 py-2 md:hover:bg-emerald-50 active:bg-emerald-50 font-semibold`}
                     >
                       الحضارة الإغريقية ▾
                     </button>
@@ -155,7 +155,7 @@ const Navbar = forwardRef<HTMLElement>((_, ref) => {
                             href="/history/archaicGreekCivilization"
                             className={`block px-4 py-2 ${isActive("/history/archaicGreekCivilization")
                               ? "bg-indigo-600 text-white rounded-lg"
-                              : "text-gray-700 hover:bg-emerald-50"
+                              : "text-gray-700 md:hover:bg-emerald-50 active:bg-emerald-50"
                               }`}
                           >
                             الحضارة الإغريقية المبكرة
@@ -168,7 +168,7 @@ const Navbar = forwardRef<HTMLElement>((_, ref) => {
                             href="/history/classicalGreekCivilization"
                             className={`block px-4 py-2 ${isActive("/history/classicalGreekCivilization")
                               ? "bg-indigo-600 text-white rounded-lg"
-                              : "text-gray-700 hover:bg-emerald-50"
+                              : "text-gray-700 md:hover:bg-emerald-50 active:bg-emerald-50"
                               }`}
                           >
                             الحضارة الإغريقية القديمة
@@ -181,7 +181,7 @@ const Navbar = forwardRef<HTMLElement>((_, ref) => {
                   <li role="none">
                     <Link role="menuitem" href="/history/hellenisticCivilization" className={` ${isActive("/history/hellenisticCivilization")
                       ? "bg-amber-600 text-white rounded-lg"
-                      : "text-gray-700 hover:bg-emerald-50"
+                      : "text-gray-700 md:hover:bg-emerald-50 active:bg-emerald-50"
                       }  block px-4 py-2`}>
                       الحضارة الهيلينية
                     </Link>
@@ -190,7 +190,7 @@ const Navbar = forwardRef<HTMLElement>((_, ref) => {
                   <li role="none">
                     <Link role="menuitem" href="/history/minoanCivilization" className={` ${isActive("/history/minoanCivilization")
                       ? "bg-amber-600 text-white rounded-lg"
-                      : "text-gray-700 hover:bg-emerald-50"
+                      : "text-gray-700 md:hover:bg-emerald-50 active:bg-emerald-50"
                       }  block px-4 py-2`}>
                       الحضارة المينوسية
                     </Link>
@@ -199,7 +199,7 @@ const Navbar = forwardRef<HTMLElement>((_, ref) => {
                   <li role="none">
                     <Link role="menuitem" href="/history/mycenaeanCivilization" className={` ${isActive("/history/mycenaeanCivilization")
                       ? "bg-amber-600 text-white rounded-lg"
-                      : "text-gray-700 hover:bg-emerald-50"
+                      : "text-gray-700 md:hover:bg-emerald-50 active:bg-emerald-50"
                       }  block px-4 py-2`}>
                       الحضارة الميسينية
                     </Link>
@@ -210,23 +210,23 @@ const Navbar = forwardRef<HTMLElement>((_, ref) => {
 
             <li><Link className={`block py-2 px-3 text-center  ${isActive("/about-greece")
               ? "text-white bg-amber-400 rounded-4xl"
-              : "text-gray-700 hover:text-emerald-700"
+              : "text-gray-700 md:hover:text-emerald-700 active:text-emerald-700"
               }`} href="/about-greece">عن اليونان</Link></li>
             <li><Link className={`block py-2 px-3 text-center ${isActive("/media")
               ? "text-white bg-amber-400 rounded-4xl"
-              : "text-gray-700 hover:text-emerald-700"
+              : "text-gray-700 md:hover:text-emerald-700 active:text-emerald-700"
               }`} href="/media">المعرض</Link></li>
             <li><Link className={`block py-2 px-3 text-center ${isActive("/societyDevelopment")
               ? "text-white bg-amber-400 rounded-4xl"
-              : "text-gray-700 hover:text-emerald-700"
+              : "text-gray-700 md:hover:text-emerald-700 active:text-emerald-700"
               }`} href="/societyDevelopment">المجتمع والتنمية</Link></li>
             <li><Link className={`block py-2 px-3 text-center ${isActive("/cultureEntertainment")
               ? "text-white bg-amber-400 rounded-4xl"
-              : "text-gray-700 hover:text-emerald-700"
+              : "text-gray-700 md:hover:text-emerald-700 active:text-emerald-700"
               }`} href="/cultureEntertainment">الثقافة والترفيه</Link></li>
             <li><Link className={`block py-2 px-3 text-center ${isActive("/educational")
               ? "text-white bg-amber-400 rounded-4xl"
-              : "text-gray-700 hover:text-emerald-700"
+              : "text-gray-700 md:hover:text-emerald-700 active:text-emerald-700"
               }`} href="/educational">قسم التعليم</Link></li>
 
           </ul>
@@ -255,7 +255,7 @@ const Navbar = forwardRef<HTMLElement>((_, ref) => {
             aria-expanded={isMobileMenuOpen}
             aria-controls="main-menu"
             onClick={() => setIsMobileMenuOpen(prev => !prev)}
-            className="md:hidden p-2 bg-amber-100 text-gray-600 rounded-lg hover:bg-emerald-300"
+            className="md:hidden p-2 bg-amber-100 text-gray-600 rounded-lg active:bg-emerald-300 md:hover:bg-emerald-300"
           >
             <svg
               className="w-6 h-6"

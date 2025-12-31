@@ -74,7 +74,7 @@ export default function GreekWikiSearch() {
         <button
           id="search-now"
           onClick={() => searchWiki()}
-          className="px-4 py-2 rounded bg-blue-600 text-white border-none cursor-pointer hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 transition"
+          className="px-4 py-2 rounded bg-blue-600 text-white border-none cursor-pointer active:bg-blue-700 md:hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 transition"
           aria-busy={loading}   // Indicates to screen readers that the button is busy
           disabled={loading}     // Prevents repeated clicks while loading
         >

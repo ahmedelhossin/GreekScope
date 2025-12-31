@@ -16,7 +16,7 @@ export default function VisitGreek() {
                 <Link
                     href="/commercial"
                     id="commercial-ad"
-                    className="bg-gray-500 text-white px-6 py-2 rounded hover:bg-gray-600 transition duration-150 w-full sm:w-auto inline-block text-center"
+                    className="bg-gray-500 text-white px-6 py-2 rounded active:bg-gray-600 md:hover:bg-gray-600 transition duration-150 w-full sm:w-auto inline-block text-center"
                 >
                     احجز الآن
                 </Link>

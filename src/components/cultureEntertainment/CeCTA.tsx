@@ -11,7 +11,7 @@ export default function CeCTA() {
             <Link href={ctaData.href}>
                 <button
                     id="cta-to-history"
-                    className="px-8 py-3 rounded-full dark:text-black text-white dark:bg-white bg-black font-bold hover:scale-105 transition"
+                    className="px-8 py-3 rounded-full dark:text-black text-white dark:bg-white bg-black font-bold active:scale-95 md:hover:scale-105 transition"
                 >
                     {ctaData.buttonText}
                 </button>

@@ -26,7 +26,7 @@ export default function InteractiveMap() {
         //             <button id="yo"
         //                 key={place.id}
         //                 onClick={() => setActivePlace(place)}
-        //                 className="absolute w-5 h-5 bg-green-400 rounded-full border-2 border-white shadow-md hover:scale-110 transition"
+        //                 className="absolute w-5 h-5 bg-green-400 rounded-full border-2 border-white shadow-md md:hover:scale-110 transition"
         //                 style={{
         //                     left: `${place.x}%`,
         //                     top: `${place.y}%`,
@@ -55,7 +55,7 @@ export default function InteractiveMap() {
         //             <p className="text-gray-600">{activePlace.description}</p>
         //             <button id="yo"
         //                 onClick={() => setActivePlace(null)}
-        //                 className="mt-2 text-xs text-blue-500 hover:underline"
+        //                 className="mt-2 text-xs text-blue-500 md:hover:underline"
         //             >
         //                 Close
         //             </button>
@@ -71,7 +71,7 @@ export default function InteractiveMap() {
                         <button
                             id="close"
                             onClick={() => setActivePlace(null)}
-                            className="mt-4 text-blue-500 hover:underline focus:outline-none focus:ring-2 focus:ring-blue-400 rounded"
+                            className="mt-4 text-blue-500 active:underline md:hover:underline focus:outline-none focus:ring-2 focus:ring-blue-400 rounded"
                             aria-label="Close modal"
                         >
                             Close
@@ -95,14 +95,14 @@ export default function InteractiveMap() {
                         id={`map-button-${place.id}`}
                         key={place.id}
                         onClick={() => setActivePlace(place)}
-                        className="absolute w-5 h-5 bg-green-400 rounded-full border-2 border-white shadow-md hover:scale-110 transition"
+                        className="absolute w-5 h-5 bg-green-400 rounded-full border-2 border-white shadow-md active:scale-90 md:hover:scale-110 transition"
                         style={{
                             left: `${place.x}%`,
                             top: `${place.y}%`,
                             transform: "translate(-50%, -50%)",
                         }}
                         aria-label={`Show details for ${place.name}`} // descriptive label
-                        title={place.name} // optional, shows tooltip on hover
+                        title={place.name} // optional, shows tooltip on md:hover
                     >
                         <span className="sr-only">{place.name}</span>
                     </button>

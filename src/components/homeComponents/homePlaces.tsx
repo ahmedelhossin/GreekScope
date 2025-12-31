@@ -25,9 +25,9 @@ export default function LandmarkCard({
       </div>
 
       {/* Overlay and Content */}
-      <div className="group-hover:bg-[#00000080] absolute inset-0 flex flex-col justify-center items-center text-center px-4 transition-all duration-500">
+      <div className="group-active:bg-[#00000080] group-md:hover:bg-[#00000080] absolute inset-0 flex flex-col justify-center items-center text-center px-4 transition-all duration-500">
         <p className="absolute bottom-2 left-3 text-white font-bold">{title}</p>
-        <div className="text-white opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100">
+        <div className="text-white opacity-0 scale-95 active:opacity-100 group-md:hover:opacity-100 active:scale-90 group-md:hover:scale-100">
           <p className="bold">{description}</p>
         </div>
       </div>

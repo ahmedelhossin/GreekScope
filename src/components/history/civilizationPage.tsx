@@ -75,7 +75,7 @@ export default function CivilizationPage({ data }: { data: HistoryDatasI }) {
                     return (
                         <Card
                             key={key}
-                            className="transition-transform transform hover:-translate-y-1 hover:shadow-xl hover:bg-emerald-50 hover:text-black"
+                            className="transition-transform transform md:hover:-translate-y-1 md:hover:shadow-xl md:hover:bg-emerald-50  md:hover:text-black active:-translate-y-1 active:shadow-xl active:bg-emerald-50 active:text-black"
                         >
                             <CardContent className="flex items-start gap-3" dir="rtl">
                                 {Icon && <Icon className="text-2xl text-emerald-500 mt-1 shrink-0" />}

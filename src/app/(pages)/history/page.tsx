@@ -13,7 +13,7 @@
 //           <Link
 //             key={era.slug}
 //             href={`/history/${era.slug}`}
-//             className="group rounded-xl overflow-hidden shadow-lg hover:scale-105 transition"
+//             className="group rounded-xl overflow-hidden shadow-lg md:hover:scale-105 transition"
 //           >
 //             <div
 //               className="h-48 bg-cover bg-center"
@@ -76,7 +76,7 @@ export default function History() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 text-center gap-8">
           {civilizations.map((item) => (
             <Link key={item.title} href={item.link}>
-              <Card className="overflow-hidden cursor-pointer transition transform hover:scale-105 hover:shadow-2xl">
+              <Card className="overflow-hidden cursor-pointer transition transform active:scale-95 active:shadow-2xl md:hover:scale-105 md:hover:shadow-2xl">
                 <div className="relative h-48 w-full">
                   <Image
                     src={item.image}

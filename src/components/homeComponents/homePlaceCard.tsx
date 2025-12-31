@@ -12,7 +12,7 @@ export default function PlaceCard({
 }: HomeBestPlaces) {
     return (
         <Link href={`${link}`}>
-            <div className="bg-white rounded-lg shadow-md overflow-hidden relative hover:scale-[1.02] transition">
+            <div className="bg-white rounded-lg shadow-md overflow-hidden relative active:scale-[0.98] md:hover:scale-[1.02] transition">
 
                 {/* Image Section */}
                 <div className="relative h-40 w-full">

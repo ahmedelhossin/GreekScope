@@ -26,7 +26,7 @@ export default function CultureGalleryPage() {
                 src={`/${img}`}
                 alt={img}
                 fill
-                className="object-cover transition-transform duration-300 hover:scale-105"
+                className="object-cover transition-transform duration-300 active:scale-95 md:hover:scale-105"
               />
             </div>
           );
