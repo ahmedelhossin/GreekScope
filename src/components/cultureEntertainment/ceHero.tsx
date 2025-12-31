@@ -5,9 +5,16 @@ import { heroBanner } from '@/data/CeBannerData'
 export default function CeHero() {
     return (
         <>
-            <div className="w-full h-64 md:h-80 overflow-hidden mb-12">
-                <Image src={`${heroBanner.image}`} width={1425} height={400} alt={`/${heroBanner.alt}`} className="object-contain" />
+            <div className="relative w-full h-64 md:h-80 mb-12">
+                <Image
+                    src={heroBanner.image}
+                    alt={heroBanner.alt}
+                    fill
+                    priority
+                    className="object-cover"
+                />
             </div>
+
             <header className="mb-12">
                 <h1 className="text-3xl md:text-4xl font-bold mb-4">مرحبًا بكم في اليونان القديمة</h1>
                 <p className="text-gray-300 not-dark:text-gray-700 text-lg leading-relaxed max-w-4xl">
