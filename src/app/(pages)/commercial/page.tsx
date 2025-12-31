@@ -36,7 +36,7 @@ export default function CommercialPage() {
                   <CardTitle>{dest.title}</CardTitle>
                   <CardDescription>{dest.description}</CardDescription>
                 </CardHeader>
-                <Link href={dest.link} className="mt-4 inline-block text-emerald-600 hover:underline">
+                <Link href={dest.link} className="mt-4 inline-block text-emerald-600 active:underline hover:underline">
                   اكتشف المزيد
                 </Link>
               </CardContent>
